@@ -4,10 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Agency Website</title>
   </head>
   <body>
+    <header>
+      <!--Nav Bar Start-->
+      <nav>
+        <ul class="nav-bar">
+          <li><a class="nav-bar" href="#home">Home</a></li>
+          <li><a class="nav-bar" href="#aboutUs"> About Us </a></li>
+          <li><a class="nav-bar" href="#contactUs"> Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- HOME SECTION - START -->
+      <h1>Welcome to our fake agency</h1>
+    </header>
+    <!-- ABOUT US - START -->
+
+    <main>
+      <section>
+        <h1>About Us</h1>
+
+        <div>
+          <img src="" alt="Joe Lindie, team member at fake agnecy" />
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            id quam vel, itaque vero nobis fugit ipsam nam consequatur, ex,
+            totam velit et placeat. Nihil debitis dignissimos explicabo possimus
+            fugit? blah
+          </h3>
+          <p>Joe Lindie.</p>
+          <p>Marketing Director</p>
+          <button>Contact Joe</button>
+        </div>
+
+        <div>
+          <img src="" alt="Alex Perez-Davies, team member at fake agnecy" />
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            id quam vel, itaque vero nobis fugit ipsam nam consequatur, ex,
+            totam velit et placeat. Nihil debitis dignissimos explicabo possimus
+            fugit?
+          </h3>
+          <p>Alex Perez-Davies.</p>
+          <p>Chief Operating Officer</p>
+          <button>Contact Alex</button>
+        </div>
+      </section>
+      <!-- ABOUT US - END -->
+
+      <!-- CONTACT FORM SECTTION _ START -->
+      <h3>Contact Us</h3>
+      <br />
+
+      <form action="URL" method="get">
+        <label for="first_name">First Name</label>
+        <input
+          id="first_name"
+          name="first_name"
+          placeholder="First name..."
+          type="text"
+        /><br />
+
+        <label for="last_name">Last Name</label>
+        <input
+          id="last_name"
+          name="last_name"
+          placeholder="Last name..."
+          type="text"
+        /><br />
+
+        <label for="company_name">Company Name</label>
+        <input
+          id="company_name"
+          name="company"
+          placeholder="Company name..."
+          type="text"
+        /><br />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="Email..." type="email" />
+        <br />
+
+        <label for="tel_num">Telephone Number</label>
+        <input id="tel_num" name="tel" placeholder="+44..." type="tel" />
+        <br />
+
+        <!-- Check Box Section  -->
+
+        <label for="marketing">Can we send you occasional emails?</label>
+        <input id="marketing" name="marketingConsent" type="checkbox" /> <br />
+        <br />
+
+        <!-- Radio Buttons Section  -->
+
+        <fieldset>
+          <legend>How should we contact you?</legend>
+          <label for="email">Email</label>
+          <input id="email" name="contact" type="radio" />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="contact" type="radio" />
+
+          <label for="post">Post</label>
+          <input id="post" name="contact" type="radio" />
+          <br />
+          <br />
+        </fieldset>
+
+        <!-- Message Box Section  -->
+
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Write your message..."
+          cols="30"
+          rows="10"
+        ></textarea>
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+      <!-- CONTACT FORM SECTTION _ END -->
+    </main>
     <script src="/script.js"></script>
   </body>
 </html>
