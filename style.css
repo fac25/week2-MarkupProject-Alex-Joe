@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -9,6 +10,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 :root {
   --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
   --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
@@ -20,10 +22,79 @@ html {
   --Cyan: hsl(178, 100%, 50%);
 }
 
+body {
+  background-color: var(--Very-dark-blue-card-BG);
+  color: var(--White);
+}
+
 
 .nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* HOMEPAGE STYLING */
+.single_page_view {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.center_page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1:hover,
+h2:hover {
+  color: var(--Cyan);
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+/* ABOUT US STYLING  */
+.team_member {
+  background-color: var(--Very-dark-blue-line);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 20rem;
+  height: 25rem;
+}
+
+/*Margins for desktop layout*/
+@media (min-width: 750px) {
+  .team_member {
+    margin-right: 3rem;
   }
+}
+
+.team_member img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.team_member button {
+  cursor: pointer;
+  padding: 0.1rem;
+}
+
+.team_member button:hover {
+ background-color: var(--Soft-blue);
+ color: var(--Cyan);
+}
