@@ -28,9 +28,13 @@ html {
   padding: 0;
   text-decoration: none;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  background-color: var(--Soft-blue);
-  width: 60%;
+  width: 100%;
+}
+
+.remove-underline {
+  text-decoration: none;
 }
 
 .center {
@@ -42,7 +46,6 @@ body {
   background-color: var(--Very-dark-blue-card-BG);
   color: var(--White);
 }
-
 
 .nav-bar {
   list-style-type: none;
@@ -63,6 +66,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 
@@ -117,6 +121,6 @@ h2:hover {
 }
 
 .team_member button:hover {
- background-color: var(--Soft-blue);
- color: var(--Cyan);
+  background-color: var(--Soft-blue);
+  color: var(--Cyan);
 }
