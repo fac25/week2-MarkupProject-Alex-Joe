@@ -182,3 +182,13 @@ h2 {
     font-size: 13px;
   }
 }
+footer {
+  width: 100vw;
+  background-color: var(--Soft-blue);
+}
+
+footer p {
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+  color: var(--Very-dark-blue-line);
+}
