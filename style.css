@@ -136,3 +136,39 @@ h2:hover {
   background-color: var(--Soft-blue);
   color: var(--Cyan);
 }
+
+/*Contact form styling*/
+
+.contact-us-box {
+  width: 60%;
+  background-color: var(--Very-dark-blue-line);
+  border: 1px black solid;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+}
+
+.stack > * + * {
+  margin-top: 0.3rem;
+}
+
+.first-name {
+  margin-top: 0.5rem;
+}
+
+.fieldset {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.submit-button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 400px) {
+  .marketing-label {
+    font-size: 13px;
+  }
+}
