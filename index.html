@@ -69,77 +69,68 @@
       <!-- ABOUT US - END -->
 
       <!-- CONTACT FORM SECTTION _ START -->
-      <h3 id="contactUs">Contact Us</h3>
-      <br />
+      <section id="contactUs">
+        <h2>Contact Us</h2>
 
-      <form action="URL" method="get">
-        <label for="first_name">First Name</label>
-        <input
-          id="first_name"
-          name="first_name"
-          placeholder="First name..."
-          type="text"
-        /><br />
+        <form
+          class="contact-us-box stack > * + * center_page"
+          action="URL"
+          method="get"
+        >
+          <label class="first-name" for="first_name">First Name</label>
+          <input id="first_name" name="first_name" type="text" required />
 
-        <label for="last_name">Last Name</label>
-        <input
-          id="last_name"
-          name="last_name"
-          placeholder="Last name..."
-          type="text"
-        /><br />
+          <label for="last_name">Last Name</label>
+          <input id="last_name" name="last_name" type="text" required />
 
-        <label for="company_name">Company Name</label>
-        <input
-          id="company_name"
-          name="company"
-          placeholder="Company name..."
-          type="text"
-        /><br />
+          <label for="company_name">Company Name</label>
+          <input id="company_name" name="company" type="text" required />
 
-        <label for="email">Email</label>
-        <input id="email" name="email" placeholder="Email..." type="email" />
-        <br />
-
-        <label for="tel_num">Telephone Number</label>
-        <input id="tel_num" name="tel" placeholder="+44..." type="tel" />
-        <br />
-
-        <!-- Check Box Section  -->
-
-        <label for="marketing">Can we send you occasional emails?</label>
-        <input id="marketing" name="marketingConsent" type="checkbox" /> <br />
-        <br />
-
-        <!-- Radio Buttons Section  -->
-
-        <fieldset>
-          <legend>How should we contact you?</legend>
           <label for="email">Email</label>
-          <input id="email" name="contact" type="radio" />
+          <input id="email" name="email" type="email" required />
 
-          <label for="phone">Phone</label>
-          <input id="phone" name="contact" type="radio" />
+          <label for="tel_num">Telephone Number</label>
+          <input id="tel_num" name="tel" type="tel" required />
 
-          <label for="post">Post</label>
-          <input id="post" name="contact" type="radio" />
-          <br />
-          <br />
-        </fieldset>
+          <!-- Check Box Section  -->
 
-        <!-- Message Box Section  -->
+          <label class="marketing-label" for="marketing"
+            >Can we send you occasional emails?</label
+          >
+          <input
+            id="marketing"
+            name="marketingConsent"
+            type="checkbox"
+            required
+          />
 
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Write your message..."
-          cols="30"
-          rows="10"
-        ></textarea>
-        <br />
+          <!-- Radio Buttons Section  -->
 
-        <button type="submit">Submit</button>
-      </form>
+          <fieldset class="fieldset">
+            <legend>How should we contact you?</legend>
+            <label for="email">Email</label>
+            <input id="email" name="contact" type="radio" />
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="contact" type="radio" />
+
+            <label for="post">Post</label>
+            <input id="post" name="contact" type="radio" />
+          </fieldset>
+
+          <!-- Message Box Section  -->
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="23"
+            rows="3"
+            required
+          ></textarea>
+
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </section>
       <!-- CONTACT FORM SECTTION _ END -->
     </main>
     <footer>Insert Footer Here</footer>
