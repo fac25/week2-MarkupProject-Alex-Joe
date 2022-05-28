@@ -72,19 +72,29 @@ body {
   justify-content: center;
 }
 
-h1,
+.homepage_container h1, 
+.homepage_container h2,
+.homepage_container p,
 h2 {
-  font-size: 2rem;
   text-align: center;
-}
+} 
 
-h1 {
+.homepage_container h1 {
+  font-size: 4rem;
   padding-bottom: 1rem;
 }
+.homepage_container h1 span {
+  font-size: 2rem;
+  color: var(--Soft-blue)
+}
 
-h1:hover,
-h2:hover {
+.homepage_container h1:hover{
   color: var(--Cyan);
+}
+
+.homepage_container .size {
+  font-size: 1.7rem;
+  font-style: italic;
 }
 
 .margin-top {
@@ -185,4 +195,14 @@ h2:hover {
   .marketing-label {
     font-size: 13px;
   }
+}
+footer {
+  width: 100vw;
+  background-color: var(--Soft-blue);
+}
+
+footer p {
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+  color: var(--Very-dark-blue-line);
 }
