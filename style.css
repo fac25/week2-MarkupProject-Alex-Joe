@@ -167,6 +167,20 @@ h2:hover {
   margin-bottom: 0.5rem;
 }
 
+.github-p {
+  margin-bottom: 10px;
+}
+
+.github-link-styling {
+  font-size: 15px;
+  color: white;
+  padding: 5px;
+}
+
+.github-link-styling:hover {
+  color: var(--Cyan);
+}
+
 @media screen and (max-width: 400px) {
   .marketing-label {
     font-size: 13px;
