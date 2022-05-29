@@ -43,7 +43,7 @@ a {
 }
 
 .nav-styling {
-  font-size: 30px;
+  font-size: 1rem;
   text-decoration: none;
   color: white;
 }
@@ -78,12 +78,12 @@ body {
   justify-content: center;
 }
 
-.homepage_container h1, 
+.homepage_container h1,
 .homepage_container h2,
 .homepage_container p,
 h2 {
   text-align: center;
-} 
+}
 
 .homepage_container h1 {
   font-size: 4rem;
@@ -91,7 +91,7 @@ h2 {
 }
 .homepage_container h1 span {
   font-size: 2rem;
-  color: var(--Soft-blue)
+  color: var(--Soft-blue);
 }
 
 .homepage_container .size {
@@ -208,7 +208,7 @@ footer {
 footer p {
   font-size: 0.7rem;
   padding-left: 0.5rem;
-  color: var(--White)
+  color: var(--White);
 }
 
 footer a:hover {
