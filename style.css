@@ -141,13 +141,12 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.team_member button {
-  cursor: pointer;
+.team_member button a {
   padding: 0.1rem;
+  background-color: var(--Soft-blue);
 }
 
-.team_member button:hover {
-  background-color: var(--Soft-blue);
+.team_member button a:hover {
   color: var(--Cyan);
 }
 
