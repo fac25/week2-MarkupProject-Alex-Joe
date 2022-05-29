@@ -16,8 +16,7 @@ function submitForm(event) {
   companyName = companyName.value;
 
   const formContainer = document.getElementById("contactUs");
-  formContainer.classList.add("contact-us-box");
-  formContainer.classList.add("center_page");
+  formContainer.classList.add("center-page");
 
   const thanksForSubmitting = document.createElement("p");
   formContainer.appendChild(thanksForSubmitting);

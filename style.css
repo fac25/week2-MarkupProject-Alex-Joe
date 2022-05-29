@@ -1,4 +1,4 @@
-/* Basic Stlying for ALL elements */
+/* Basic Styling for ALL elements */
 html {
   box-sizing: border-box;
 }
@@ -10,12 +10,22 @@ html {
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: var(--Very-dark-blue-BG);
+  color: var(--White);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.single-page-view {
+  width: 100%;
+  min-height: 100vh;
+}
 
 :root {
-  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
-  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-BG: hsl(216, 50%, 16%);
   --Very-dark-blue-line: hsl(215, 32%, 27%);
   --White: hsl(0, 0%, 100%);
+  --Black: hsl(100, 100%, 0%);
 
   /* Primary Colors */
   --Soft-blue: hsl(215, 51%, 70%);
@@ -28,49 +38,7 @@ a {
   color: var(--White);
 }
 
-.nav-container {
-  width: 400px;
-  margin-bottom: 10px;
-}
-
-.nav-bar {
-  list-style-type: none;
-  margin-top: 0;
-  padding: 0;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.nav-styling {
-  font-size: 1rem;
-  text-decoration: none;
-  color: white;
-}
-
-.nav-styling:hover {
-  color: var(--Cyan);
-}
-
-body {
-  background-color: var(--Very-dark-blue-card-BG);
-  color: var(--White);
-}
-
-.nav-bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-/* HOMEPAGE STYLING */
-.single_page_view {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.center_page {
+.center-page {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -78,40 +46,70 @@ body {
   justify-content: center;
 }
 
-.homepage_container h1,
-.homepage_container h2,
-.homepage_container p,
+.text-align-center > * + *,
+h1,
 h2 {
   text-align: center;
 }
 
-.homepage_container h1 {
-  font-size: 4rem;
-  padding-bottom: 1rem;
+.margin-top > * + * {
+  margin-top: 1rem;
 }
-.homepage_container h1 span {
+
+button {
+  padding: 0.3rem;
+  background-color: var(--Very-dark-blue-line);
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--Cyan);
+}
+
+button a:hover {
+  color: var(--Black);
+}
+
+/* Basic styling css end*/
+
+.nav-container {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+li a:hover {
+  color: var(--Cyan);
+}
+
+/* HOMEPAGE STYLING */
+
+.homepage-container h1 {
+  font-size: 4rem;
+}
+.homepage-container h1 span {
   font-size: 2rem;
   color: var(--Soft-blue);
 }
 
-.homepage_container .size {
+.homepage-container .font-size {
   font-size: 1.7rem;
   font-style: italic;
 }
 
-.margin-top {
-  margin-top: 1rem;
-}
-
 /* ABOUT US STYLING  */
-.center_about {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.center-about {
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
-.team_member {
+.team-member {
   background-color: var(--Very-dark-blue-line);
   border-radius: 20px;
   margin-bottom: 1rem;
@@ -119,34 +117,21 @@ h2 {
   padding: 1rem;
   width: 20rem;
   height: 25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /*Margins for desktop layout*/
 @media (min-width: 650px) {
-  .team_member {
+  .team-member {
     display: flex;
     justify-content: space-between;
   }
 }
 
-.team_member img {
+.team-member img {
   width: 110px;
   height: 110px;
   border-radius: 50%;
   margin-bottom: 1rem;
-}
-
-.team_member button a {
-  padding: 0.1rem;
-  background-color: var(--Soft-blue);
-}
-
-.team_member button a:hover {
-  color: var(--Cyan);
 }
 
 /*Contact form styling*/
@@ -154,28 +139,28 @@ h2 {
 .contact-us-box {
   width: 60%;
   background-color: var(--Very-dark-blue-line);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   border-radius: 20px;
+  padding: 0.5rem;
 }
 
 .stack > * + * {
   margin-top: 0.3rem;
 }
 
-.first-name {
-  margin-top: 0.5rem;
-}
-
-.fieldset {
-  border: 1px solid black;
+fieldset {
+  border: 1px solid var(--Black);
   padding: 10px;
 }
 
-.submit-button {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.submit-form {
+  color: var(--White);
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.submit-form:hover {
+  color: var(--Black);
 }
 
 .github-p {
