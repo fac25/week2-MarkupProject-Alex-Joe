@@ -130,7 +130,6 @@ h2 {
   .team_member {
     display: flex;
     justify-content: space-between;
- 
   }
 }
 
@@ -208,7 +207,6 @@ h2 {
 footer {
   width: 100vw;
   background-color: var(--Very-dark-blue-line);
-  margin-top: 2rem;
   padding: 0.2rem;
 }
 
