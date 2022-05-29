@@ -108,7 +108,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .team_member {
@@ -126,15 +126,17 @@ h2 {
 }
 
 /*Margins for desktop layout*/
-@media (min-width: 750px) {
+@media (min-width: 650px) {
   .team_member {
-    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+ 
   }
 }
 
 .team_member img {
-  width: 70px;
-  height: 70px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
