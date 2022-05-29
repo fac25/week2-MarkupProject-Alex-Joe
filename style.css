@@ -1,4 +1,4 @@
-/* Basic Stlying  */
+/* Basic Stlying for ALL elements */
 html {
   box-sizing: border-box;
 }
@@ -20,6 +20,12 @@ html {
   /* Primary Colors */
   --Soft-blue: hsl(215, 51%, 70%);
   --Cyan: hsl(178, 100%, 50%);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--White);
 }
 
 .nav-container {
@@ -198,11 +204,17 @@ h2 {
 }
 footer {
   width: 100vw;
-  background-color: var(--Soft-blue);
+  background-color: var(--Very-dark-blue-line);
+  margin-top: 2rem;
+  padding: 0.2rem;
 }
 
 footer p {
   font-size: 0.7rem;
   padding-left: 0.5rem;
-  color: var(--Very-dark-blue-line);
+  color: var(--White)
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
