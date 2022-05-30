@@ -1,4 +1,4 @@
-/* Basic Styling for ALL elements */
+/* BASIC STYLING FOR ALL ELEMENTS */
 html {
   box-sizing: border-box;
 }
@@ -16,20 +16,20 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.single-page-view {
-  width: 100%;
-  min-height: 100vh;
-}
-
 :root {
   --Very-dark-blue-BG: hsl(216, 50%, 16%);
   --Very-dark-blue-line: hsl(215, 32%, 27%);
   --White: hsl(0, 0%, 100%);
   --Black: hsl(100, 100%, 0%);
 
-  /* Primary Colors */
+  /* PRIMARY COLORS */
   --Soft-blue: hsl(215, 51%, 70%);
   --Cyan: hsl(178, 100%, 50%);
+}
+
+.single-page-view {
+  width: 100%;
+  min-height: 100vh;
 }
 
 a {
@@ -56,21 +56,21 @@ h2 {
   margin-top: 1rem;
 }
 
-button {
+.button {
   padding: 0.3rem;
-  background-color: var(--Very-dark-blue-line);
+  background-color: var(--Very-dark-blue-BG);
   border-radius: 5px;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--Cyan);
 }
 
-button a:hover {
+.button a:hover {
   color: var(--Black);
 }
 
-/* Basic styling css end*/
+/* BASIC STYLING CSS END*/
 
 .nav-container {
   width: 400px;
@@ -104,22 +104,22 @@ li a:hover {
 }
 
 /* ABOUT US STYLING  */
-.center-about {
-  flex-direction: row;
+ .center-about {
+   display: flex;
+   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .team-member {
   background-color: var(--Very-dark-blue-line);
   border-radius: 20px;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin: 2rem;
   padding: 1rem;
   width: 20rem;
   height: 25rem;
 }
 
-/*Margins for desktop layout*/
+/*MARGINS FOR DESKTOP LAYOUT*/
 @media (min-width: 650px) {
   .team-member {
     display: flex;
@@ -134,7 +134,7 @@ li a:hover {
   margin-bottom: 1rem;
 }
 
-/*Contact form styling*/
+/*CONTACT FORM STYLING*/
 
 .contact-us-box {
   width: 60%;
@@ -153,18 +153,16 @@ fieldset {
   padding: 10px;
 }
 
-.submit-form {
-  color: var(--White);
-  padding: 0.3rem;
-  border-radius: 5px;
-}
-
-.submit-form:hover {
-  color: var(--Black);
-}
-
 .github-p {
   margin-bottom: 10px;
+}
+
+button {
+  color: var(--White);
+}
+
+button:hover {
+  color: var(--Black);
 }
 
 .github-link-styling {
