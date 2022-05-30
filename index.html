@@ -16,21 +16,16 @@
 
     <title>Agency Website</title>
   </head>
+
   <body>
+    <!-- HOME SECTION - START -->
     <header class="single-page-view center-page">
-      <!--Nav Bar Start-->
-      <!-- HOME SECTION - START -->
+      <!--NAV BAR START-->
       <nav class="nav-container">
         <ul class="nav-bar">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#aboutUs"> About Us </a>
-          </li>
-          <li>
-            <a href="#contactUs"> Contact Us</a>
-          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutUs">About Us</a></li>
+          <li><a href="#contactUs">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -45,11 +40,11 @@
     </header>
 
     <!-- ABOUT US - START -->
-    <main>
-      <section id="aboutUs" class="single-page-view">
+    <main id="aboutUs">
+      <section class="single-page-view center-page">
         <h2>About Us</h2>
-        <section class="center-page center-about">
-          <section class="team-member center-page margin-top">
+        <div class="center-about">
+          <div class="team-member center-page margin-top">
             <img
               src="Images/Joe_image.jpg"
               alt="Joe Lindie, team member at DIY Agency"
@@ -61,14 +56,14 @@
             </p>
             <p>Joe Lindie.</p>
             <p>Lead UI Developer</p>
-            <button>
+            <span class="button">
               <a href="https://github.com/Joe-Lindie" target="_blank"
                 >Contact Joe</a
               >
-            </button>
-          </section>
+            </span>
+          </div>
 
-          <section class="team-member center-page margin-top">
+          <div class="team-member center-page margin-top">
             <img
               src="Images/Alex_image.jpg"
               alt="Alex Perez-Davies, team member at DIY Agency"
@@ -80,14 +75,15 @@
             </p>
             <p>Alex Perez-Davies.</p>
             <p>Lead UX Designer</p>
-            <button>
+            <span class="button">
               <a href="https://github.com/AlexPD93" target="_blank"
                 >Contact Alex</a
               >
-            </button>
-          </section>
-        </section>
+            </span>
+          </div>
+        </div>
       </section>
+
       <!-- ABOUT US - END -->
 
       <!-- CONTACT FORM SECTTION _ START -->
@@ -110,19 +106,19 @@
           <label for="tel_num">Telephone Number</label>
           <input id="tel_num" name="tel" type="tel" />
 
-          <!-- Check Box Section  -->
+          <!-- CHECK BOX SECTION  -->
 
           <label class="marketing-label" for="marketing"
             >Can we send you occasional emails?</label
           >
           <input id="marketing" name="marketingConsent" type="checkbox" />
 
-          <!-- Radio Buttons Section  -->
+          <!-- RADIO BUTTONS SECTION  -->
 
           <fieldset>
             <legend>How should we contact you?</legend>
-            <label for="email">Email</label>
-            <input id="email" name="contact" type="radio" />
+            <label for="email_address">Email</label>
+            <input id="email_address" name="contact" type="radio" />
 
             <label for="phone">Phone</label>
             <input id="phone" name="contact" type="radio" />
@@ -131,14 +127,14 @@
             <input id="post" name="contact" type="radio" />
           </fieldset>
 
-          <!-- Message Box Section  -->
+          <!-- MESSAGE BOX SECTION  -->
           <label for="message">Message</label>
           <textarea name="message" id="message" cols="23" rows="3"></textarea>
 
-          <button class="submit-form" type="submit">Submit</button>
+          <button class="button" type="submit">Submit</button>
         </form>
       </section>
-      <!-- CONTACT FORM SECTTION _ END -->
+      <!-- CONTACT FORM SECTTION - END -->
     </main>
     <footer>
       <p>
