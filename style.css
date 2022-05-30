@@ -203,7 +203,6 @@ button:hover {
 }
 
 footer {
-  width: 100vw;
   background-color: var(--Very-dark-blue-line);
   padding: 0.2rem;
 }
