@@ -7,5 +7,5 @@
 
 This project was designed and created by Alex and Joe. You can find our hosted project [here](https://fac25.github.io/week2-MarkupProject-Alex-Joe/)
 
-![agency website](images/desktop_layout.png)
+![agency website screenshot](Images/desktop_layout.png)
 
