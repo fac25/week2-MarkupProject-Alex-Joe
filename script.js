@@ -6,14 +6,11 @@ function submitForm(event) {
   let form = document.querySelector("form");
   form.style.display = "none";
 
-  let firstName = document.getElementById("first_name");
-  firstName = firstName.value;
+  let firstName = document.getElementById("first_name").value;
 
-  let surname = document.getElementById("last_name");
-  surname = surname.value;
+  let surname = document.getElementById("last_name").value;
 
-  let companyName = document.getElementById("company_name");
-  companyName = companyName.value;
+  let companyName = document.getElementById("company_name").value;
 
   const formContainer = document.getElementById("contactUs");
   formContainer.classList.add("center-page");
