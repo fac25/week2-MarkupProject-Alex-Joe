@@ -17,6 +17,7 @@ function submitForm(event) {
 
   const formContainer = document.getElementById("contactUs");
   formContainer.classList.add("center-page");
+  formContainer.classList.add("contact-box-after-submit");
 
   const thanksForSubmitting = document.createElement("p");
   formContainer.appendChild(thanksForSubmitting);
