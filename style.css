@@ -104,9 +104,9 @@ li a:hover {
 }
 
 /* ABOUT US STYLING  */
- .center-about {
-   display: flex;
-   flex-wrap: wrap;
+.center-about {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -175,6 +175,18 @@ button:hover {
   color: var(--Cyan);
 }
 
+.contact-box-after-submit {
+  background-color: var(--Very-dark-blue-line);
+  width: 40%;
+  border-radius: 20px;
+  min-height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
 @media screen and (max-width: 400px) {
   .marketing-label {
     font-size: 13px;
@@ -183,6 +195,9 @@ button:hover {
 
 @media screen and (max-width: 657px) {
   .contact-us-box {
+    width: 20rem;
+  }
+  .contact-box-after-submit {
     width: 20rem;
   }
 }
