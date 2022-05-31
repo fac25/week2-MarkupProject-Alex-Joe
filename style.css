@@ -1,6 +1,7 @@
 /* BASIC STYLING FOR ALL ELEMENTS */
 html {
   box-sizing: border-box;
+  position: relative;
 }
 
 *,
@@ -28,7 +29,7 @@ body {
 }
 
 .single-page-view {
-  width: 100%;
+  min-width: 100%;
   min-height: 100vh;
 }
 
@@ -206,8 +207,8 @@ button:hover {
 footer {
   background-color: var(--Very-dark-blue-line);
   padding: 0.2rem;
-  min-width: 100%;
   margin-top: 1rem;
+  min-width: 100%;
 }
 
 footer p {
