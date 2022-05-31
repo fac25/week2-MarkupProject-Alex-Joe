@@ -206,6 +206,8 @@ button:hover {
 footer {
   background-color: var(--Very-dark-blue-line);
   padding: 0.2rem;
+  min-width: 100%;
+  margin-top: 1rem;
 }
 
 footer p {
